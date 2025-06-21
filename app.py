@@ -1,7 +1,3 @@
-# prompt: write a code that create a simple streamlit app with title handwritten MNist image generator. The app will only have one input which is a dropdown to choose digit between 0-9. Then it generates five images and displays them side by side when a submit button is clicked
-
-!pip install streamlit
-
 import streamlit as st
 import tensorflow as tf
 import numpy as np
