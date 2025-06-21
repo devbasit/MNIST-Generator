@@ -54,14 +54,14 @@ if st.button("Generate Images"):
     col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
-        st.image(generated_images[0], clamp=True, output_format="png")
+        st.image(generated_images[0], use_container_width = True, clamp=True, output_format="png")
     with col2:
-        st.image(generated_images[1],  clamp=True, output_format="png")
+        st.image(generated_images[1],  use_container_width = True, clamp=True, output_format="png")
     with col3:
-        st.image(generated_images[2],  clamp=True, output_format="png")
+        st.image(generated_images[2],  use_container_width = True, clamp=True, output_format="png")
     with col4:
-        st.image(generated_images[3],  clamp=True, output_format="png")
+        st.image(generated_images[3],  use_container_width = True, clamp=True, output_format="png")
     with col5:
-        st.image(generated_images[4],  clamp=True, output_format="png")
+        st.image(generated_images[4],  use_container_width = True, clamp=True, output_format="png")
 
     st.success("Images generated!")
