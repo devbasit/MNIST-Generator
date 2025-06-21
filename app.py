@@ -26,7 +26,7 @@ def generate_digit_tflite(digit):
         raise ValueError("Digit must be between 0 and 9")
 
     # Create one-hot encoded input
-    input_vector = tf.keras.utils.to_categorical([digit], 10)
+    input_vector = (tf.keras.utils.to_categorical([digit], 10)+np.random.normal(0, 0.1, (1, 10))).astype(np.float32)
     input_data = np.array(input_vector, dtype=np.float32)
 
     # Set the tensor to the input data
